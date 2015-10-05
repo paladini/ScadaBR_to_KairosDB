@@ -1,4 +1,4 @@
-! Export ScadaBR database to KairosDB
+Export ScadaBR database to KairosDB
 =======================
 
 If you're running ScadaBR and you would like to export your MySQL/MariaDB database to KairosDB (non-sql and time series database) then you're in the right place. 
@@ -6,7 +6,7 @@ If you're running ScadaBR and you would like to export your MySQL/MariaDB databa
 Installation / How to use? 
 ---------------
 
-You don't need to install anything, it's very simple to use this script and it should work in any Linux distribution that has Python2 or Python3 installed.
+It's very simple to use this script and it should work in any Linux distribution that has Python2 or Python3 installed and [mysql-connector-python](https://dev.mysql.com/downloads/connector/python/2.1.html) [that's needed, please install mysql-connector-python].
 
 Before start make sure that you are okay with all of the following items:
 
@@ -21,12 +21,11 @@ chmod +x run.sh
 ./run.sh
 ```
 
-**The script will ask you to provide some informations:**
+The script will ask you to provide some informations:
 
-1. **The dabase name:** the ScadaBR database name. The default is `scadabr`.
-2. **MySQL/MariaDB username:** give the username you use to connect into to MySQL/MariaDB. The default is `root`.
-3.  **MySQL/MariaDB password:** give the password you use WITH THE USERNAME PROVIDED PREVIOUSLY to connect to MySQL/MariaDB. The default is `` (empty).
-
+**The dabase name:** the ScadaBR database name. The default is `scadabr`.
+**MySQL/MariaDB username:** give the username you use to connect into to MySQL/MariaDB. The default is `root`.
+**MySQL/MariaDB password:** give the password you use WITH THE USERNAME PROVIDED PREVIOUSLY to connect to MySQL/MariaDB. The default is `` (empty).
 
 Troubles? Suggestions? Questions?
 --------------
@@ -34,3 +33,8 @@ Troubles? Suggestions? Questions?
 Please, contact me if you need any help with troubles, questions or do you have some suggestions to this script.
 
 fernandopalad at gmail.com
+
+About
+--------------
+
+This small script was developed by Fernando Paladini on 2015. Hope it help you :) 
