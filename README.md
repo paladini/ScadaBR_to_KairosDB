@@ -1,38 +1,37 @@
 Export ScadaBR database to KairosDB
 =======================
 
-If you're running ScadaBR and you would like to export your MySQL/MariaDB database to KairosDB, a modern NoSQL time series database that runs on top of Cassandra, then you're in the right place. 
+If you're running ScadaBR and you would like to export your MySQL/MariaDB database to KairosDB, a modern NoSQL time series database that runs on top of Cassandra, then you're in the right place.
+
+This small Python script will easily convert your ScadaBR database into a KairosDB database.
 
 Installation / How to use? 
 ---------------
 
 It's very simple to use this script and it should work in any Linux distribution that has Python3 installed and [mysql-connector-python](https://dev.mysql.com/downloads/connector/python/2.1.html) [both are pre-requisite, please install mysql-connector-python].
 
-Before start make sure that you are okay with all of the following items:
+**1) Before start make sure that you are okay with all of the following items:**
 
-- MySQL/MariaDB server up and running.
-- KairosDB server up and running.
-- ScadaBR database inside your server.
+1. MySQL/MariaDB server up and running.
+2. KairosDB server up and running.
+3. ScadaBR database inside your server.
 
-To run this script execute the following commands in your Terminal (Ctrl+Alt+T):
+**2) Run the script in your Terminal (Ctrl+Alt+T):**
 
 ```sh
 chmod +x export.sh
 ./export.sh
 ```
 
-The script will ask you to provide some informations:
+**3) Provide the credentials:**
 
-**The dabase name:** the ScadaBR database name. The default is `scadabr`.
-**MySQL/MariaDB username:** give the username you use to connect into to MySQL/MariaDB. The default is `root`.
-**MySQL/MariaDB password:** give the password you use WITH THE USERNAME PROVIDED PREVIOUSLY to connect to MySQL/MariaDB. The default is `` (empty).
+In order to export the database, our Python script must know your database name, your username and your password for MySQL/MariaDB database.  
 
-Troubles? Suggestions? Questions?
---------------
+- Dabase name: the ScadaBR database name. The default is `scadabr`.
+- Username: give the username you use to connect into to MySQL/MariaDB. The default is `root`.
+- Password: give the password you use WITH THE USERNAME PROVIDED PREVIOUSLY to connect to MySQL/MariaDB. The default is `` (empty).
 
-Please, contact me if you need any help with troubles, questions or do you have some suggestions to this script.
-
-fernandopalad at gmail.com
+Now the script should do the work! Be patient and if you got any trouble, question, bug or want to suggest us a feature, feel free to contact me at fernandopalad@gmail.com (or via GitHub Issues).
 
 About
 --------------
