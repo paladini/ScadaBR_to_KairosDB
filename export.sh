@@ -1,11 +1,7 @@
 #!/bin/sh
 
-# Declaring default values for some needed variables
-database_name='scadabr'
-database_username='root'
-database_password=''
-
-chmod +x export_scadabr_database_to_kairosdb.py
+# Making our python script executable
+chmod +x bin/scadabr_database_to_kairosdb.py
 
 # Clear the console
 clear
@@ -40,4 +36,4 @@ echo -ne '#######################################################   (100%)\r'
 echo -ne '\n\n'
 
 # Running python script with these arguments
-./scadabr_database_to_kairosdb.py $DATABASE_NAME $DATABASE_USERNAME $DATABASE_PASSWORD
+./bin/scadabr_database_to_kairosdb.py $DATABASE_NAME $DATABASE_USERNAME $DATABASE_PASSWORD
