@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/bin/python3.4
 import requests
 import gzip
 import json
