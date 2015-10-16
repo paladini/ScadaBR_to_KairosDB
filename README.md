@@ -8,7 +8,12 @@ This small Python script will easily convert your ScadaBR database into a Kairos
 Installation / How to use? 
 ---------------
 
-It's very simple to use this script and it should work in any Linux distribution that has Python3 and [mysql-connector-python](https://dev.mysql.com/downloads/connector/python/2.1.html) [both are prerequisites, please install mysql-connector-python].
+It's very simple to use this script and it should work in any Linux distribution. However, we've the following prerequisites: 
+
+* Any version of Python 3 installed.
+* [mysql-connector-python](https://dev.mysql.com/downloads/connector/python/) (don't forget, download the version for Python3).
+
+In order to run the script correctly, please provide both requisites in your machine.
 
 **1) Before start make sure that you are okay with all of the following items:**
 
