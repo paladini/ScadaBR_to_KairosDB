@@ -36,4 +36,4 @@ echo -ne '#######################################################   (100%)\r'
 echo -ne '\n\n'
 
 # Running python script with these arguments
-python3.4 bin/scadabr_database_to_kairosdb.py $DATABASE_NAME $DATABASE_USERNAME $DATABASE_PASSWORD
+/usr/bin/env python3 bin/scadabr_database_to_kairosdb.py $DATABASE_NAME $DATABASE_USERNAME $DATABASE_PASSWORD
