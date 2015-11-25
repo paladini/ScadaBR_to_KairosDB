@@ -12,7 +12,7 @@ It's very simple to use this script and it should work in any Linux distribution
 
 * Any version of Python 3 installed.
 * [pip3](http://pip.readthedocs.org/en/stable/), the Python package manager for Python 3.
-* [mysql-connector-python](https://dev.mysql.com/downloads/connector/python/) (don't forget, download the version for Python3).
+* [PyMySQL](https://github.com/PyMySQL/PyMySQL) (don't forget, use pip3 to install this module for Python3).
 
 In order to run the script correctly, please provide both requisites in your machine.
 
